@@ -1,0 +1,36 @@
+@import '/src/styles.scss';
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 20px;
+    height: 70px;
+    
+
+    align-items: center;
+
+    background-color: $white;
+
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 24px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

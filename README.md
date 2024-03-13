@@ -1,45 +1,27 @@
-# FastApi
+# FastApiPage
 
-## Objetivo: 
-Crear una API simple en Python con FastAPI que exponga un endpoint para obtener una lista de nombres.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
-Pasos:
-1. Importaciones:
+## Development server
 
-from fastapi import FastAPI
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-2. Aplicación FastAPI:
+## Code scaffolding
 
-app = FastAPI()
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-3. Endpoints:
-@app.get("/nombres") 
-async def obtener_nombres(): 
-  return ["Juan", "María", "Pedro"]
+## Build
 
-4. Ejecutar la aplicación:
-if __name__ == "__main__": 
-  import uvicorn 
-  uvicorn.run(app, port=8000)
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Explicación:
-La clase FastAPI de la librería fastapi proporciona la funcionalidad para crear la API.
-El decorador @app.get("/nombres") define una ruta GET para el endpoint /nombres.
-La función obtener_nombres es la función que se ejecuta cuando se llama al endpoint /nombres.
-La función devuelve una lista de nombres como respuesta.
-El comando uvicorn.run(app, port=8000) inicia la aplicación FastAPI en el puerto 8000.
-Beneficios de usar FastAPI:
-Fácil de usar: FastAPI es una librería fácil de usar para crear APIs en Python.
-Rápido: FastAPI es una librería muy rápida y eficiente.
-Flexible: FastAPI es una librería muy flexible que permite crear APIs con diferentes funcionalidades.
-Documentación: FastAPI tiene una excelente documentación que facilita el aprendizaje y el uso de la librería.
-Recursos adicionales:
-Documentación de FastAPI: https://fastapi.tiangolo.com/
-Tutoriales de FastAPI: https://fastapi.tiangolo.com/tutorial/
-Ejemplos de APIs con FastAPI: [se quitó una URL no válida]
-Nota: Este es un ejemplo sencillo para ilustrar el uso de FastAPI. Puedes adaptar este ejemplo a tus necesidades específicas. Subir el link de tu repositorio de github.
+## Running unit tests
 
-## Resultados
-Link: https://fastapi-deploy-uonp.onrender.com/heroes
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-![image](https://github.com/guzhdz/FastApi/assets/89165084/39ede6f7-2f6b-46c8-95f2-0c8a160aea64)
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

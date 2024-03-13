@@ -1,0 +1,29 @@
+@import '/src/styles.scss';
+
+.footer {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 20px;
+    height: 50px;
+
+    background-color: $secondary;
+
+    .options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        li {
+            width: 110px;
+            text-align: center;
+            color: $white;
+
+            &:hover {
+                cursor: pointer;
+                filter: brightness(85%);
+            }
+        }
+    }
+
+}

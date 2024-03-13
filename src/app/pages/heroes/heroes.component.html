@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<article class="main-article">
+    <div class="banner">
+        <span>Heroes</span>
+    </div>
+
+    <div class="menu-container">
+        <ul class="menu">
+            <li [ngClass]="{'active': heroesRol == 0}" (click)="filterHeroes(0)">All</li>
+            <li [ngClass]="{'active': heroesRol == 1}" (click)="filterHeroes(1)">Tank</li>
+            <li [ngClass]="{'active': heroesRol == 2}" (click)="filterHeroes(2)">Damage</li>
+            <li [ngClass]="{'active': heroesRol == 3}" (click)="filterHeroes(3)">Support</li>
+        </ul>
+    </div>
+
+    <div class="heroes-list">
+        <div class="hero-container" *ngFor="let hero of heroes">
+            <img src="{{hero.portrait}}" alt="portrait">
+
+            <div class="info">
+                <img src="/assets/{{hero.role}}-icon.png" alt="rol-icon">
+                <span>{{hero.name}}</span>
+            </div>
+        </div>
+    </div>
+</article>
+
+<app-footer></app-footer>
+
+
+
+
