@@ -1,3 +1,12 @@
+# Heroes OW FastApi
+El proyecto consta de un pagina que muestra la galeria de heroes del juego Overwatch, con filtros por categoria de rol. En cada seleccion de categoria y al inicar la app se hace una consulta a los datos
+usando FastApi y los datos se obtiene  gracias a una Api de Overwatch.
+
+## Resultados
+Link despliegue: https://fastapi-deploy-uonp.onrender.com/heroes
+
+![image](https://github.com/guzhdz/FastApi/assets/89165084/55c3bdb1-f7e2-47cf-b9e1-f6aba22e0a41)
+
 # FastApiPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
